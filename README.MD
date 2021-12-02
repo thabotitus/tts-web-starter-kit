@@ -91,6 +91,7 @@ npm run package
 | `npm run package`                  | Takes contents from your built app and zips them into a folder with the configured name       |
 | `npm run deploy`                   | Takes contents from your built app and deploys it to Surge.sh with the configured domain name |
 | `npm run bump:<major/minor/patch>` | Bumps the version in the version files (`version.json`, `pacakge.json`, `package-lock.json`)  |
+| `npm run scratch`                  | Copies the sample folder into your root with a clean slate                                    |
 
 ## Contributing
 

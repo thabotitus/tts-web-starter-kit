@@ -43,10 +43,22 @@ const NUNJUCKS_TEMPLATES_PATH = "src/templates";
 const STYLES_OUTPUT_NAME = "app.min.css";
 const SURGE_DOMAIN = null;
 
+const COPYRIGHT_NOTICE = `
+/*!
+ * # TTS Web Starter Kit
+ * https://ttsftwr.github.io/tts-web-starter-kit/
+ *
+ * Copyright 2021 Thabo Titus
+ * Instagram @thabo.titus
+ *
+ */
+`;
+
 export {
   APP_ROOT,
   BROWSER_PORT,
   BROSWER_SYNC_NAME,
+  COPYRIGHT_NOTICE,
   DISTRIBUTION_FOLDERS,
   DOWNLOADS_FOLDER,
   INPUT_FOLDERS,
