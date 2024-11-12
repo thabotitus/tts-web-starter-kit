@@ -27,16 +27,20 @@ gh repo clone ttsftwr/tts-web-starter-kit
 npm i -g gulp
 ```
 
+```bash
+npm i -g bun
+```
+
 - Install npm deps
 
 ```bash
-npm install
+bun install
 ```
 
 - Build it
 
 ```bash
-npm run build
+bun run build
 ```
 
 ## Usage
@@ -46,7 +50,7 @@ npm run build
 Starting the app in development mode starts up a server that hot reloads your scss changes and live reloads your HTML(Nunjucks) changes. Run `npm run build` before your very first run to build the files that will be served.
 
 ```bash
-npm start
+bun start
 ```
 
 #### Build for production
@@ -54,7 +58,7 @@ npm start
 You can build the app for production by running the command below. This will build all your files into the `/dist` folder. You can change this location in `build/config.js` in the `DISTRIBUTION_FOLDERS` hash under the key `root`.
 
 ```bash
-npm run build
+bun run build
 ```
 
 #### Bump versions
@@ -62,7 +66,7 @@ npm run build
 You can bump the version by running;
 
 ```bash
-npm run bump:<major|minor|patch>
+bun run bump:<major|minor|patch>
 ```
 
 which will bump the version of your app in these files;
@@ -78,20 +82,20 @@ which will bump the version of your app in these files;
 You can build a compressed file with the built code by running:
 
 ```bash
-npm run package
+bun run package
 ```
 
 ### Available Commands
 
 | Command                            | Description                                                                                   |
 | ---------------------------------- | --------------------------------------------------------------------------------------------- |
-| `npm start`                        | Starts the server on your configuerd port (default 3000) and begins browsersync session       |
-| `npm run set:env`                  | Sets your node env to the one specified in `.node-version`                                    |
-| `npm run build`                    | Builds your app for production in your configured folder (default `docs`)                     |
-| `npm run package`                  | Takes contents from your built app and zips them into a folder with the configured name       |
-| `npm run deploy`                   | Takes contents from your built app and deploys it to Surge.sh with the configured domain name |
-| `npm run bump:<major/minor/patch>` | Bumps the version in the version files (`version.json`, `pacakge.json`, `package-lock.json`)  |
-| `npm run scratch`                  | Copies the sample folder into your root with a clean slate                                    |
+| `bun start`                        | Starts the server on your configuerd port (default 3000) and begins browsersync session       |
+| `bun run set:env`                  | Sets your node env to the one specified in `.node-version`                                    |
+| `bun run build`                    | Builds your app for production in your configured folder (default `docs`)                     |
+| `bun run package`                  | Takes contents from your built app and zips them into a folder with the configured name       |
+| `bun run deploy`                   | Takes contents from your built app and deploys it to Surge.sh with the configured domain name |
+| `bun run bump:<major/minor/patch>` | Bumps the version in the version files (`version.json`, `pacakge.json`, `package-lock.json`)  |
+| `bun run scratch`                  | Copies the sample folder into your root with a clean slate                                    |
 
 ## Contributing
 
