@@ -1,6 +1,8 @@
+@use "sass:color";
+
 .wsk-browser-compatibility {
   padding: 60px 0;
-  background-color: darken(white, 5%);
+  background-color: color.adjust(white, $lightness: -5%);
 
   p {
     font-size: 1.3rem;
