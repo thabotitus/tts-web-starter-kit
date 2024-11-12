@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .wsk-btn {
   display: inline-flex;
   text-transform: capitalize;
@@ -29,7 +31,7 @@
 
     &:hover {
       color: #fff;
-      background-color: darken(#f64c71, 8%);
+      background-color: color.adjust(#f64c71, $lightness: -8%);
     }
   }
 
@@ -40,7 +42,7 @@
 
     &:hover {
       color: #f64c71;
-      border: 2px solid darken(#f64c71, 8%);
+      border: 2px solid color.adjust(#f64c71, $lightness: -8%);
     }
   }
 

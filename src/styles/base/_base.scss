@@ -1,3 +1,5 @@
+@use "sass:color";
+
 body {
   font-family: "Titillium Web", sans-serif;
   width: 100%;
@@ -36,7 +38,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: lighten(#c53d5a, 10%);
+    color: color.adjust(#c53d5a, $lightness: 10%);
     text-decoration: underline;
   }
 }
